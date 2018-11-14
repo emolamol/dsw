@@ -1,0 +1,11 @@
+com/instashop/cloud/online/LoyaltyPipeline$MyOptions.class
+com/instashop/cloud/online/schema/BigQueryDeadletterSchema.class
+com/instashop/cloud/online/LoyaltyPipeline$3.class
+com/instashop/cloud/online/LoyaltyPipeline$4.class
+com/instashop/cloud/online/schema/TableSchemaBuilder.class
+com/instashop/cloud/online/LoyaltyPipeline$1.class
+com/instashop/cloud/online/LoyaltyPipeline.class
+com/instashop/cloud/online/dofn/PubSubMessageToTableRow.class
+com/instashop/cloud/online/LoyaltyPipeline$2.class
+com/instashop/cloud/online/LoyaltyInfo.class
+com/instashop/cloud/online/LoyaltyInfo$Field.class

@@ -1,0 +1,553 @@
+{
+	"Transaction": {
+		"-xmlns": "http://www.nrf-arts.org/IXRetail/namespace/",
+		"-xmlns:ns2": "http://transaction.model.connect.starmount.com",
+		"-CancelFlag": "false",
+		"RetailStoreID": "1111111",
+		"WorkstationID": "005",
+		"TillID": "103",
+		"SequenceNumber": "17",
+		"BusinessDayDate": "2016-07-19",
+		"BeginDateTime": "2016-07-29T15:11:55Z",
+		"EndDateTime": "2016-07-29T15:14:59Z",
+		"OperatorID": {
+			"-OperatorName": "Justin",
+			"-EmployeeID": "200011",
+			"#text": "jrightmer"
+		},
+		"RetailTransaction": {
+			"-Version": "2.2",
+			"-TypeCode": "Transaction",
+			"-TransactionStatus": "Finished",
+			"ReceiptDateTime": "2016-07-29T15:14:59Z",
+			"ItemCount": "2",
+			"LineItem": [{
+					"-VoidFlag": "false",
+					"-EntryMethod": "Keyed",
+					"SequenceNumber": "0",
+					"BeginDateTime": "2016-07-29T15:14:59Z",
+					"EndDateTime": "2016-07-29T15:14:59Z",
+					"Sale": {
+						"-ItemType": "Stock",
+						"POSIdentity": [{
+								"-POSIDType": "Item",
+								"POSItemID": "8006",
+								"Qualifier": "0"
+							},
+							{
+								"-POSIDType": "BusinessUnitGroup",
+								"POSItemID": "1"
+							}
+						],
+						"ItemID": [{
+								"-Type": "SKU",
+								"#text": "8006"
+							},
+							{
+								"-Type": "POSDepartment",
+								"#text": "3"
+							}
+						],
+						"Description": "Multi Price Item 2",
+						"TaxIncludedInPriceFlag": "false",
+						"UnitListPrice": "25.00",
+						"RegularSalesUnitPrice": "25.00",
+						"ActualSalesUnitPrice": "21.25",
+						"ExtendedAmount": "25.00",
+						"ExtendedDiscountAmount": "21.25",
+						"Quantity": "1.00",
+						"Associate": {
+							"AssociateID": {
+								"-OperatorType": "Cashier",
+								"#text": "200011"
+							},
+							"Commission": {
+								"Percentage": "100.00",
+								"Amount": "0.00"
+							}
+						},
+						"RetailPriceModifier": {
+							"-DiscountBenefit": "Customer",
+							"-MethodCode": "Markdown",
+							"SequenceNumber": "0",
+							"Percent": {
+								"-Action": "Subtract",
+								"#text": "15.00"
+							},
+							"ReasonCode": "DesignerDiscount",
+							"stmt:DiscountScope": {
+								"-xmlns:stmt": "http://transaction.model.connect.starmount.com",
+								"-xmlns:arts": "http://www.nrf-arts.org/IXRetail/namespace/",
+								"-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+								"#text": "TRANSACTION"
+							}
+						},
+						"Tax": [{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "0",
+								"TaxAuthority": "City of Austin",
+								"TaxableAmount": "21.25",
+								"Amount": "0.40",
+								"Percent": "1.88",
+								"TaxRuleID": "6",
+								"TaxGroupID": "100"
+							},
+							{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "1",
+								"TaxAuthority": "Austin County",
+								"TaxableAmount": "21.25",
+								"Amount": "0.02",
+								"Percent": "0.10",
+								"TaxRuleID": "9",
+								"TaxGroupID": "100"
+							},
+							{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "2",
+								"TaxAuthority": "State of Texas",
+								"TaxableAmount": "21.25",
+								"Amount": "1.28",
+								"Percent": "6.00",
+								"TaxRuleID": "3",
+								"TaxGroupID": "100"
+							},
+							{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "3",
+								"TaxAuthority": "USA Country",
+								"TaxableAmount": "21.25",
+								"Amount": "0.21",
+								"Percent": "0.99",
+								"TaxRuleID": "1",
+								"TaxGroupID": "100"
+							}
+						],
+						"GiftReceiptFlag": "true",
+						"stmt:AllowableReturnChannel": {
+							"-xmlns:stmt": "http://transaction.model.connect.starmount.com",
+							"-xmlns:arts": "http://www.nrf-arts.org/IXRetail/namespace/",
+							"-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+							"#text": "RETURNABLE-TO-STORE-ONLY"
+						}
+					}
+				},
+				{
+					"-VoidFlag": "false",
+					"-EntryMethod": "Scanned",
+					"SequenceNumber": "1",
+					"BeginDateTime": "2016-07-29T15:14:59Z",
+					"EndDateTime": "2016-07-29T15:14:59Z",
+					"Sale": {
+						"-ItemType": "Stock",
+						"POSIdentity": [{
+								"-POSIDType": "Item",
+								"POSItemID": "2000350002",
+								"Qualifier": "0"
+							},
+							{
+								"-POSIDType": "BusinessUnitGroup",
+								"POSItemID": "1"
+							}
+						],
+						"ItemID": [{
+								"-Type": "SKU",
+								"#text": "2000350002"
+							},
+							{
+								"-Type": "POSDepartment",
+								"#text": "8"
+							}
+						],
+						"Description": "Horizon Convertible Pants",
+						"TaxIncludedInPriceFlag": "false",
+						"UnitListPrice": "49.93",
+						"RegularSalesUnitPrice": "49.93",
+						"ActualSalesUnitPrice": "42.44",
+						"ExtendedAmount": "49.93",
+						"ExtendedDiscountAmount": "42.44",
+						"Quantity": "1.00",
+						"Associate": {
+							"AssociateID": {
+								"-OperatorType": "Cashier",
+								"#text": "200011"
+							},
+							"Commission": {
+								"Percentage": "100.00",
+								"Amount": "0.00"
+							}
+						},
+						"RetailPriceModifier": {
+							"-DiscountBenefit": "Customer",
+							"-MethodCode": "Markdown",
+							"SequenceNumber": "0",
+							"Percent": {
+								"-Action": "Subtract",
+								"#text": "15.00"
+							},
+							"ReasonCode": "DesignerDiscount",
+							"stmt:DiscountScope": {
+								"-xmlns:stmt": "http://transaction.model.connect.starmount.com",
+								"-xmlns:arts": "http://www.nrf-arts.org/IXRetail/namespace/",
+								"-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+								"#text": "TRANSACTION"
+							}
+						},
+						"Tax": [{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "0",
+								"TaxAuthority": "City of Austin",
+								"TaxableAmount": "42.44",
+								"Amount": "0.80",
+								"Percent": "1.88",
+								"TaxRuleID": "6",
+								"TaxGroupID": "100"
+							},
+							{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "1",
+								"TaxAuthority": "Austin County",
+								"TaxableAmount": "42.44",
+								"Amount": "0.04",
+								"Percent": "0.10",
+								"TaxRuleID": "9",
+								"TaxGroupID": "100"
+							},
+							{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "2",
+								"TaxAuthority": "State of Texas",
+								"TaxableAmount": "42.44",
+								"Amount": "2.55",
+								"Percent": "6.00",
+								"TaxRuleID": "3",
+								"TaxGroupID": "100"
+							},
+							{
+								"-TaxType": "Sales",
+								"-TaxSubType": "Starmount:S",
+								"-TaxAtSource": "TaxedAtOrigin",
+								"SequenceNumber": "3",
+								"TaxAuthority": "USA Country",
+								"TaxableAmount": "42.44",
+								"Amount": "0.42",
+								"Percent": "0.99",
+								"TaxRuleID": "1",
+								"TaxGroupID": "100"
+							}
+						],
+						"GiftReceiptFlag": "true",
+						"stmt:AllowableReturnChannel": {
+							"-xmlns:stmt": "http://transaction.model.connect.starmount.com",
+							"-xmlns:arts": "http://www.nrf-arts.org/IXRetail/namespace/",
+							"-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+							"#text": "RETURNABLE-TO-STORE-ONLY"
+						}
+					}
+				},
+				{
+					"-VoidFlag": "false",
+					"-EntryMethod": "Scanned",
+					"SequenceNumber": "2",
+					"BeginDateTime": "2016-07-29T15:14:59Z",
+					"EndDateTime": "2016-07-29T15:14:59Z",
+					"Tax": {
+						"TaxableAmount": "63.69",
+						"TaxablePercentage": "0.00",
+						"Amount": "5.72",
+						"Percent": "8.97"
+					}
+				},
+				{
+					"-VoidFlag": "false",
+					"-EntryMethod": "Scanned",
+					"SequenceNumber": "3",
+					"BeginDateTime": "2016-07-29T15:14:59Z",
+					"EndDateTime": "2016-07-29T15:14:59Z",
+					"Discount": {
+						"-ProratedFlag": "false",
+						"Amount": "11.24",
+						"Percentage": "15.00"
+					}
+				},
+				{
+					"-VoidFlag": "false",
+					"-EntryMethod": "Keyed",
+					"SequenceNumber": "4",
+					"BeginDateTime": "2016-07-29T15:14:59Z",
+					"EndDateTime": "2016-07-29T15:14:59Z",
+					"Tender": {
+						"-TenderType": "CreditDebit",
+						"-TypeCode": "Sale",
+						"Amount": "69.41",
+						"AmountAppliedToBill": "69.41",
+						"Authorization": {
+							"-HostAuthorized": "false",
+							"RequestedAmount": "69.41",
+							"AuthorizationCode": "SysAth",
+							"ReferenceNumber": "local",
+							"MerchantNumber": "123452",
+							"AuthorizationDateTime": "2016-07-29T15:14:54Z",
+							"AuthorizedChangeAmount": "0.00",
+							"RequestedChangeAmount": "0.00",
+							"Signature": "x150y106x147y101x142y93x135y76x131y56x128y32x127y13x103y14x95y35x86y64x80y87x76y109x75y122x75y130x75y133x82y124x97y110x115y98x140y87x164y76x184y70x199y66x208y65x214y65x217y71x214y92x199y116x180y134x159y148x142y156x129y159x121y160x118y160x118y155x132y139x157y121x183y102x207y89x224y80x236y78x246y79x252y93x254y116x255y134x257y144x263y147x285y141x315y117x350y90x384y69x410y56x428y52x437y52x442y56x443y67x443y76x444y81x444y86x451y86x475y69",
+							"stmt:AuthorizationSequenceNumber": {
+								"-xmlns:stmt": "http://transaction.model.connect.starmount.com",
+								"-xmlns:arts": "http://www.nrf-arts.org/IXRetail/namespace/",
+								"-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+								"#text": "0"
+							}
+						},
+						"ForeignCurrency": {
+							"OriginalFaceAmount": "0.00"
+						},
+						"CreditDebit": {
+							"-CardType": "Credit",
+							"PrimaryAccountNumber": "5555320000008540",
+							"IssueSequence": "8540",
+							"ExpirationDate": "2019-09",
+							"CreditCardCompanyCode": "Master"
+						}
+					}
+				}
+			],
+			"Total": [{
+					"-TotalType": "TransactionNetAmount",
+					"#text": "63.69"
+				},
+				{
+					"-TotalType": "Starmount:TransactionTenderApplied",
+					"#text": "69.41"
+				},
+				{
+					"-TotalType": "TransactionSubtotal",
+					"#text": "63.69"
+				},
+				{
+					"-TotalType": "TransactionGrossAmount",
+					"#text": "69.41"
+				},
+				{
+					"-TotalType": "Starmount:TransactionTotalSavings",
+					"#text": "11.24"
+				},
+				{
+					"-TotalType": "TransactionTaxAmount",
+					"#text": "5.72"
+				}
+			]
+		},
+		"stmt:TransactionExtension": {
+			"-xmlns:stmt": "http://transaction.model.connect.starmount.com",
+			"-xmlns:arts": "http://www.nrf-arts.org/IXRetail/namespace/",
+			"-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+			"-id": "09127201607190050017",
+			"stmt:EJournal": "7/29/2016",
+			"stmt:Receipt": [{
+					"-ReceiptTextType": "SALE",
+					"receipt": {
+						"-xmlns:ns6": "http://www.nrf-arts.org/IXRetail/namespace/",
+						"request": {
+							"TRANSACTION": "0017",
+							"REGISTER": "005",
+							"STORE": "09127",
+							"CASHIER": "200011",
+							"TILL": "103",
+							"BARCODE": "09127201607190050017",
+							"RECEIPT_TYPE": "SALE",
+							"DUPLICATE_RECEIPT_FLAG": "false",
+							"TRANSACTION_TYPE": "RetailTransaction",
+							"TRANSACTION_DATE": "2016-07-29T10:14:59.362-05:00",
+							"STORE_ADDRESS": "12901 North IH 35 Ste 3-300",
+							"STORE_CITY": "Austin",
+							"STORE_STATE": "TX",
+							"STORE_ZIP": "78753",
+							"VAT_TAX": "false",
+							"TRANSACTION_GIFT_RECEIPT": "false",
+							"SALES_ASSOCIATE": "200011",
+							"TOTAL": "69.41",
+							"SUBTOTAL": "63.69",
+							"SALES_TAX": {
+								"SALES_TAX_PERCENT": "8.97",
+								"SALES_TAX_AMOUNT": "5.72"
+							},
+							"TAXTOTAL": "5.72",
+							"TRANSACTION_TENDER_AMOUNT": "0.0",
+							"CHANGE_DUE": "0.0",
+							"DISCOUNT_TOTAL": "11.24",
+							"CREDIT_AMOUNT_PENDING": "0.0",
+							"ITEM": [{
+									"DESCRIPTION": "Multi Price Item 2",
+									"ITEM_ID": "8006",
+									"PRICE": "0.0",
+									"QUANTITY": "1.0",
+									"PRICE_PER_UNIT": "25.0",
+									"EXTENDED_PRICE": "21.25",
+									"ITEM_TRANS_DISCOUNTS": {
+										"DISCOUNT_LINE": {
+											"ITEM_DISCOUNT_AMOUNT": "3.75",
+											"ITEM_DISCOUNT_PERCENT": "15",
+											"ITEM_DISCOUNT_REASON": "2103 - Designer Discount"
+										}
+									},
+									"UNIT_TAX": "1.91",
+									"ITEM_TAX_ON_OFF": "ON",
+									"ITEM_GIFT_RECEIPT": "false",
+									"NUMBER_OF_GIFT_RECEIPT": "0",
+									"ITEM_INDICATORS": "1"
+								},
+								{
+									"DESCRIPTION": "Horizon Convertible Pants",
+									"ITEM_ID": "2000350002",
+									"PRICE": "0.0",
+									"QUANTITY": "1.0",
+									"PRICE_PER_UNIT": "49.93",
+									"EXTENDED_PRICE": "42.44",
+									"ITEM_TRANS_DISCOUNTS": {
+										"DISCOUNT_LINE": {
+											"ITEM_DISCOUNT_AMOUNT": "7.49",
+											"ITEM_DISCOUNT_PERCENT": "15",
+											"ITEM_DISCOUNT_REASON": "2103 - Designer Discount"
+										}
+									},
+									"UNIT_TAX": "3.81",
+									"ITEM_TAX_ON_OFF": "ON",
+									"ITEM_GIFT_RECEIPT": "false",
+									"NUMBER_OF_GIFT_RECEIPT": "0",
+									"ITEM_INDICATORS": "2"
+								}
+							],
+							"TRANSACTION_DISCOUNTS": {
+								"DISCOUNT_LINE": {
+									"TRANSACTION_DISCOUNT_AMOUNT": "11.24",
+									"TRANSACTION_DISCOUNT_PERCENT": "15",
+									"TRANSACTION_DISCOUNT_REASON": "2103 - Designer Discount"
+								}
+							},
+							"TENDER": {
+								"TENDER_TYPE": "Mastercard",
+								"TENDER_AMOUNT": "69.41",
+								"ACCOUNT_NUMBER": "8540",
+								"AUTH_NUMBER": "SysAth",
+								"AUTH_CODE": "A",
+								"ENTRY": "M",
+								"TENDER_PIN": "09/2019",
+								"TENDER_BARCODE": "CREDIT"
+							},
+							"TENDER_TOTAL": "69.41"
+						}
+					}
+				},
+				{
+					"-ReceiptTextType": "TRANSACTION_GIFT",
+					"receipt": {
+						"-xmlns:ns6": "http://www.nrf-arts.org/IXRetail/namespace/",
+						"request": {
+							"TRANSACTION": "0017",
+							"REGISTER": "005",
+							"STORE": "09127",
+							"CASHIER": "200011",
+							"TILL": "103",
+							"BARCODE": "09127201607190050017",
+							"RECEIPT_TYPE": "TRANSACTION_GIFT",
+							"DUPLICATE_RECEIPT_FLAG": "false",
+							"TRANSACTION_TYPE": "RetailTransaction",
+							"TRANSACTION_DATE": "2016-07-29T10:14:59.413-05:00",
+							"STORE_ADDRESS": "12901 North IH 35 Ste 3-300",
+							"STORE_CITY": "Austin",
+							"STORE_STATE": "TX",
+							"STORE_ZIP": "78753",
+							"VAT_TAX": "false",
+							"TRANSACTION_GIFT_RECEIPT": "true",
+							"SALES_ASSOCIATE": "200011",
+							"TOTAL": "69.41",
+							"SUBTOTAL": "63.69",
+							"SALES_TAX": {
+								"SALES_TAX_PERCENT": "8.97",
+								"SALES_TAX_AMOUNT": "5.72"
+							},
+							"TAXTOTAL": "5.72",
+							"TRANSACTION_TENDER_AMOUNT": "0.0",
+							"CHANGE_DUE": "0.0",
+							"DISCOUNT_TOTAL": "11.24",
+							"CREDIT_AMOUNT_PENDING": "0.0",
+							"ITEM": [{
+									"DESCRIPTION": "Multi Price Item 2",
+									"ITEM_ID": "8006",
+									"PRICE": "0.0",
+									"QUANTITY": "1.0",
+									"PRICE_PER_UNIT": "25.0",
+									"EXTENDED_PRICE": "21.25",
+									"ITEM_TRANS_DISCOUNTS": {
+										"DISCOUNT_LINE": {
+											"ITEM_DISCOUNT_AMOUNT": "3.75",
+											"ITEM_DISCOUNT_PERCENT": "15",
+											"ITEM_DISCOUNT_REASON": "2103 - Designer Discount"
+										}
+									},
+									"UNIT_TAX": "1.91",
+									"ITEM_TAX_ON_OFF": "ON",
+									"ITEM_GIFT_RECEIPT": "true",
+									"NUMBER_OF_GIFT_RECEIPT": "0",
+									"ITEM_INDICATORS": "1"
+								},
+								{
+									"DESCRIPTION": "Horizon Convertible Pants",
+									"ITEM_ID": "2000350002",
+									"PRICE": "0.0",
+									"QUANTITY": "1.0",
+									"PRICE_PER_UNIT": "49.93",
+									"EXTENDED_PRICE": "42.44",
+									"ITEM_TRANS_DISCOUNTS": {
+										"DISCOUNT_LINE": {
+											"ITEM_DISCOUNT_AMOUNT": "7.49",
+											"ITEM_DISCOUNT_PERCENT": "15",
+											"ITEM_DISCOUNT_REASON": "2103 - Designer Discount"
+										}
+									},
+									"UNIT_TAX": "3.81",
+									"ITEM_TAX_ON_OFF": "ON",
+									"ITEM_GIFT_RECEIPT": "true",
+									"NUMBER_OF_GIFT_RECEIPT": "0",
+									"ITEM_INDICATORS": "2"
+								}
+							],
+							"TRANSACTION_DISCOUNTS": {
+								"DISCOUNT_LINE": {
+									"TRANSACTION_DISCOUNT_AMOUNT": "11.24",
+									"TRANSACTION_DISCOUNT_PERCENT": "15",
+									"TRANSACTION_DISCOUNT_REASON": "2103 - Designer Discount"
+								}
+							},
+							"TENDER": {
+								"TENDER_TYPE": "Mastercard",
+								"TENDER_AMOUNT": "69.41",
+								"ACCOUNT_NUMBER": "8540",
+								"AUTH_NUMBER": "SysAth",
+								"AUTH_CODE": "A",
+								"ENTRY": "M",
+								"TENDER_PIN": "09/2019",
+								"TENDER_BARCODE": "CREDIT"
+							},
+							"TENDER_TOTAL": "69.41"
+						}
+					}
+				}
+			]
+		}
+	}
+}

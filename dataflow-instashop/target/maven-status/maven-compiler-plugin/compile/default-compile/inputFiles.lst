@@ -1,0 +1,5 @@
+/home/namita_shrma/instashop/dataflow-instashop/src/main/java/com/instashop/cloud/online/schema/BigQueryDeadletterSchema.java
+/home/namita_shrma/instashop/dataflow-instashop/src/main/java/com/instashop/cloud/online/dofn/PubSubMessageToTableRow.java
+/home/namita_shrma/instashop/dataflow-instashop/src/main/java/com/instashop/cloud/online/schema/TableSchemaBuilder.java
+/home/namita_shrma/instashop/dataflow-instashop/src/main/java/com/instashop/cloud/online/LoyaltyInfo.java
+/home/namita_shrma/instashop/dataflow-instashop/src/main/java/com/instashop/cloud/online/LoyaltyPipeline.java
